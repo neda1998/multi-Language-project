@@ -52,6 +52,10 @@ export default function App() {
   }, [currentLanguage, t])
 
   return (
+    <>
+    <div>
+      multi language
+    </div>
     <div className="container">
       <div className="language-select">
         <div className="d-flex justify-content-end align-items-center language-select-root">
@@ -99,5 +103,6 @@ export default function App() {
         <p>{t('days_since_release', { number_of_days })}</p>
       </div>
     </div>
+    </>
   )
 }
